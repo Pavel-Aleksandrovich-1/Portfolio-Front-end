@@ -1,0 +1,42 @@
+.root {
+	background-color: #38383a;
+	padding: 10px 0;
+	margin-bottom: 30px;
+}
+
+.inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	background-color: #38383a;
+	font-size: 13px;
+	color: #fff;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.15px;
+	border-radius: 15px;
+	padding: 10px;
+	text-decoration: none;
+	transition: 0.5s;
+
+	&:hover {
+		transition: 0.5s;
+		background-color: #59100b;
+	}
+}
+
+.buttons {
+	button {
+		margin-left: 10px;
+		background-color: #38383a;
+		transition: 0.5s;
+		border: none;
+		color: #fff;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
