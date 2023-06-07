@@ -6,8 +6,14 @@ body {
 	background-color: #232326 !important;
 }
 
-@media(max-width:900px){
-	.MuiGrid-root{
+@media (max-width: 900px) {
+	.css-480o17-MuiGrid-root > .MuiGrid-item {
 		display: none;
+	}
+}
+
+@media (max-width: 900px) {
+	.css-1tz8m30 > .MuiGrid-item {
+		width: 100%;
 	}
 }
