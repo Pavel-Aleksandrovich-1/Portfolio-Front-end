@@ -5,3 +5,9 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	background-color: #232326 !important;
 }
+
+@media(max-width:900px){
+	.MuiGrid-root{
+		display: none;
+	}
+}
