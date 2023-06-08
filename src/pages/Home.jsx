@@ -32,7 +32,7 @@ export const Home = () => {
 						 commentsCount={3}
 						 tags={obj.tags}
 						 isEditable={
-							userData?._id === obj.ban._id
+							userData?._id === obj.user._id
 						 }
 					 />
 					))}
