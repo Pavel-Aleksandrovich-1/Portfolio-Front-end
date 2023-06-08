@@ -34,7 +34,7 @@ export const Home = () => {
 					 />
 					))}
         </Grid>
-        <Grid md={0}  item>
+        <Grid xs={4}  item>
           <TagsBlock items={tags.items} isLoading={isTagsLoading}  className="item__tags"/>
         </Grid>
       </Grid>
