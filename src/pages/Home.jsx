@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
+
 import { Post } from '../components/Post';
 import { TagsBlock } from '../components/TagsBlock';
 
@@ -19,7 +20,7 @@ export const Home = () => {
   return (
     <>
       <Grid container spacing={4}>
-        <Grid md={12} item>
+        <Grid xs={8} item>
           {(isPostsLoading ? [...Array(5)] : posts.items).map((obj, index) => isPostsLoading ? <Post key={index} isLoading={true}/> :(
 						 <Post
 						 id={obj._id}
@@ -34,7 +35,7 @@ export const Home = () => {
 					 />
 					))}
         </Grid>
-        <Grid xs={4}  item>
+        <Grid xs={4} item>
           <TagsBlock items={tags.items} isLoading={isTagsLoading}  className="item__tags"/>
         </Grid>
       </Grid>
