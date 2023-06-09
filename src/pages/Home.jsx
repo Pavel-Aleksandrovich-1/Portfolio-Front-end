@@ -3,10 +3,8 @@ import Grid from '@mui/material/Grid';
 
 import { Post } from '../components/Post';
 import { TagsBlock } from '../components/TagsBlock';
-
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchPosts, fetchTags } from '../redux/slices/posts';
-
 export const Home = () => {
 	const dispatch = useDispatch()
 	const  userData = useSelector((state)=> state.auth.data)
@@ -20,7 +18,7 @@ export const Home = () => {
   return (
     <>
       <Grid container spacing={4}>
-        <Grid item  xs={12} md={12}>
+        <Grid item  xs={8} md={12}>
           {(isPostsLoading ? [...Array(5)] : posts.items).map((obj, index) => isPostsLoading ? <Post key={index} isLoading={true}/> :(
 						 <Post
 						 id={obj._id}
